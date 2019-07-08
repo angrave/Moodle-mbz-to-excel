@@ -7,6 +7,19 @@ into the equivalent dataset represented as sheets in a small set of Excel files.
 Uses Python 3, Pandas and Jupyter notebooks
 Optionally requires IP2Location csv data to convert IP into geo-location.
 
+## License
+
+MBZ-XML-TO-EXCEL
+
+This software was original developed by Lawrence Angrave. First pubished version May 22, 2019. This is version 0.0003 (July 8, 2019)
+
+Licensed under the NCSA Open source license Copyright (c) 2019 Lawrence Angrave All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal with the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimers. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimers in the documentation and/or other materials provided with the distribution. Neither the names of Lawrence Angrave, University of Illinois nor the names of its contributors may be used to endorse or promote products derived from this Software without specific prior written permission.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE. 
 
 ## Main Features
 
@@ -22,6 +35,14 @@ Optionally requires IP2Location csv data to convert IP into geo-location.
 * Data across multiple course section instances is aggregated together
 * Similar object types across all components is aggregatedinto a single Excel table
 * Input source can be the original mbz archive file, or the archive file already expanded as a list of xml files in multiple subdirectories.
+
+## Citations
+
+In a presentation, report or paper please recognise and acknowledge the the use of this software. Please contact angrave@illinois.edu for a Bibliography citation. For presentations, the following is sufficient
+
+MBZ-XML-TO-EXCEL (https://github.com/angrave/Moodle-mbz-to-excel) by Lawrence Angrave. MBZ-XML-TO-EXCEL is an iLearn project, supported by an Institute of Education Sciences Award R305A180211
+
+If also using Geo-IP data, please cite IP2Location. For example, "This report uses geo-ip location data from IP2Location.com"
 
 ## Use
 
@@ -77,6 +98,7 @@ Logstores.xlsx, logstore_standard_log
  * Does not capture viewing of specific posts (part of a conversation); but can see when a student views the discussion as a whole.
 
 Event types and their frequency in one course (this is the 'eventname' column)- 
+````
  124 \assignsubmission_onlinetext\event\assessable_uploaded
   59 \assignsubmission_onlinetext\event\submission_created
   65 \assignsubmission_onlinetext\event\submission_updated
@@ -172,5 +194,5 @@ Event types and their frequency in one course (this is the 'eventname' column)-
   44 \report_log\event\report_viewed
    6 \report_log\event\user_report_viewed
    1 eventname
-
+````
 
