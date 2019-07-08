@@ -1,0 +1,7 @@
+This project converts a Moodle archive (mbz), or a directory of XML files extracted from an mbz, 
+into the equivalent dataset represended as sheets in a ssmall set of Excel files.
+
+Timestamps are stored using the original Unix timestamp, and in addition are expressed as readable UTC strings
+
+HTML data is stored a plain text
+ 
