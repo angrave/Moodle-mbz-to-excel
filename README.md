@@ -83,20 +83,25 @@ Current Limitations due to dropping superfluous table.
 * No way to see forum mapped
 
 
-## Forum viewing notes
+## Working with forum viewing and other event streams
 
 Forum viewing can be determined using the events in Logstores.xlsx
+````
 eventname	component	action	target	objecttable	objectid	crud
 \mod_forum\event\discussion_viewed	mod_forum	viewed	discussion	forum_discussions	2290762	r
+````
 
-Logstores.xlsx, logstore_standard_log
+````
+Use Logstores.xlsx, logstore_standard_log
  objecttable=='forum_discussions'
- crud='r'
+ crud='r' (read)
  timecreated_utc e.g. 2018-10-14 20:26:04
  anonid
  objectid points to discussion.id
- * Can see if student was on campus network or remote
- * Does not capture viewing of specific posts (part of a conversation); but can see when a student views the discussion as a whole.
+````
+
+* Can see if student was on campus network or remote
+* Does not capture viewing of specific posts (part of a conversation); but can see when a student views the discussion as a whole.
 
 Event types and their frequency in one course (this is the 'eventname' column)- 
 ````
