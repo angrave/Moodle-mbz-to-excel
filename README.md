@@ -29,7 +29,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * Moodle userid are converted into anonymous ids (that can be specified external or defined as random hext digits)
 * user Iv4P addresses are optionally converted in geographic locations (town, state,country, lattitude and longitude etc)
 * References to surrounding tags are automatically indexed
-* Superfluous xml tags (that only act as a container) are not discarded
+* Superfluous xml tags that only act as a container are discarded rather than creating yet more tables
 * Attributes and leaf tags are combined as columns for the table
 * EOriginal xml source file is referenced in every Excel table row to aid cross referencing and validation.
 * Data across multiple course section instances is aggregated together
@@ -84,6 +84,7 @@ Current Limitations due to dropping superfluous table.
 
 
 ## Forum viewing notes
+
 Forum viewing can be determined using the events in Logstores.xlsx
 eventname	component	action	target	objecttable	objectid	crud
 \mod_forum\event\discussion_viewed	mod_forum	viewed	discussion	forum_discussions	2290762	r
