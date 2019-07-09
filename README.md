@@ -27,7 +27,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * HTML content is extracted as plain text
 * Text encoded as base-64 is decoded
 * Moodle userid are converted into anonymous ids (that can be specified external or defined as random hex digits)
-* user Iv4P addresses are optionally converted in geographic locations (town, state,country, lattitude and longitude etc)
+* user IPv4 addresses are optionally converted in geographic locations (town, state, country, lattitude and longitude etc)
 * References to surrounding tags are automatically indexed
 * Superfluous xml tags that only act as a container are discarded rather than creating yet more tables
 * Attributes and leaf tags are combined as columns for the table
