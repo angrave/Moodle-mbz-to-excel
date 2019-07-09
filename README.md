@@ -13,7 +13,7 @@ MBZ-XML-TO-EXCEL
 
 This software was original developed by Lawrence Angrave. First pubished version May 22, 2019. This is version 0.0003 (July 8, 2019)
 
-Licensed under the NCSA Open source license Copyright (c) 2019 Lawrence Angrave All rights reserved.
+Licensed under the NCSA Open source license Copyright (c) 2019 Lawrence Angrave, All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal with the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -26,29 +26,33 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * In addition to native unix epoch timestamp, timestamps are recorded as readable UTC strings
 * HTML content is extracted as plain text
 * Text encoded as base-64 is decoded
-* Moodle userid are converted into anonymous ids (that can be specified external or defined as random hext digits)
+* Moodle userid are converted into anonymous ids (that can be specified external or defined as random hex digits)
 * user Iv4P addresses are optionally converted in geographic locations (town, state,country, lattitude and longitude etc)
 * References to surrounding tags are automatically indexed
 * Superfluous xml tags that only act as a container are discarded rather than creating yet more tables
 * Attributes and leaf tags are combined as columns for the table
-* EOriginal xml source file is referenced in every Excel table row to aid cross referencing and validation.
+* Original xml source file is cross-referenced in every Excel table row, including tags and original xml source line number, to aid cross referencing and validation.
 * Data across multiple course section instances is aggregated together
 * Similar object types across all components is aggregatedinto a single Excel table
 * Input source can be the original mbz archive file, or the archive file already expanded as a list of xml files in multiple subdirectories.
 
-## Citations
+## Citations and acknowledgements
 
-In a presentation, report or paper please recognise and acknowledge the the use of this software. Please contact angrave@illinois.edu for a Bibliography citation. For presentations, the following is sufficient
+In a presentation, report or paper please recognise and acknowledge the the use of this software. Please contact angrave atat illinois.edu for a Bibliography citation. For presentations, the following is sufficient
 
-MBZ-XML-TO-EXCEL (https://github.com/angrave/Moodle-mbz-to-excel) by Lawrence Angrave. MBZ-XML-TO-EXCEL is an iLearn project, supported by an Institute of Education Sciences Award R305A180211
+MBZ-XML-TO-EXCEL (https://github.com/angrave/Moodle-mbz-to-excel) by Lawrence Angrave. 
+MBZ-XML-TO-EXCEL is project from The Illinois iLearn Group, supported in part by the Institute of Education Sciences Award R305A180211
 
-If also using Geo-IP data, please cite IP2Location. For example, "This report uses geo-ip location data from IP2Location.com"
+If also using Geo-IP data, please cite IP2Location as the source of your GeoIP. For example, "This report uses geo-ip location data from IP2Location.com"
+
+If you use this in your project, a quick email to the author would be welcomed!
 
 ## Use
 
-1. If Geo-IP location is valuable to you. Download and unzip the free IPv4 city data from IP2Location.com
+1. If Geo-IP i.e. location data is valuable to you. Download and unzip the free IPv4 city data from IP2Location.com
 2. Specify the location of the mbz file (or the directory of expanded archive) - see the end of the notebook for configuration options
-3. Run the entire notebook. Drink coffee or tea while it processes your data.
+3. Run the entire notebook. Drink coffee or tea while it crunches through the data. Typical processing time is 30 minutes.
+
 
 ## Limitations and gotchas of current build
 
@@ -56,10 +60,11 @@ If also using Geo-IP data, please cite IP2Location. For example, "This report us
 * Do not assume data is sorted by id or time.
 * The assessment sheet (generated from workshop.xml) may generate URLs that are longer than 255 characters, the largested supported by Excel. These very long URLs will be excluded
 * No verification or correctness testing of the data has been performed.
-* It is unknown if the inferred timestamps based on the Unix Epoch timestamp require a timezone adjustment.
+* It is currently unknown if the inferred timestamps based on the Unix Epoch timestamp require a timezone adjustment.
 
 
 # Working with Moodle data
+
 ## Notes on extracting forum texts
 
 ALL_Forum.xlsx  post table
