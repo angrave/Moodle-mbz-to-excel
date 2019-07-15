@@ -27,7 +27,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * HTML content is extracted as plain text
 * Text encoded as base-64 is decoded
 * Moodle userid are converted into anonymous ids (that can be specified external or defined as random hex digits)
-* user IPv4 addresses are optionally converted in geographic locations (town, state, country, lattitude and longitude etc)
+* User IPv4 addresses are optionally converted in geographic locations (town, state, country, lattitude and longitude etc)
 * References to surrounding tags are automatically indexed
 * Superfluous xml tags that only act as a container are discarded rather than creating yet more tables
 * Attributes and leaf tags are combined as columns for the table
@@ -54,13 +54,11 @@ If you use this in your project, a quick email to the author would be welcomed!
 3. Run the entire notebook. Drink coffee or tea while it crunches through the data. Typical processing time is 30 minutes.
 
 
-## Limitations and gotchas of current build
+## Limitations and gotchas
 
-* Does not remap index and tag when superfluous containers are dropped. So it is not possible to determine next level container.
-* Do not assume data is sorted by id or time.
+* Do not assume data is sorted by id or time. Data is concatenated by file -  time-sequenced events in different files will not be sorted in time-order.
 * The assessment sheet (generated from workshop.xml) may generate URLs that are longer than 255 characters, the largested supported by Excel. These very long URLs will be excluded
-* No verification or correctness testing of the data has been performed.
-* It is currently unknown if the inferred timestamps based on the Unix Epoch timestamp require a timezone adjustment.
+* Inferred timestamps based on the Unix Epoch timestamp value may make invalid assumptions about timezone.
 
 
 # Working with Moodle data
@@ -82,10 +80,6 @@ ALL_Forum.xlsx, discussion table
 ALL_Forum.xlsx, forum table
 There about 20 forums predefined-
 'Course Announcements, Course Q &amp; A Forum, Social Forum, Post Introduction Video for Video Project, Forum Group Discussion of Topic X, Forum Group Discussion of Topic Y'
-
-Current Limitations due to dropping superfluous table.
-* No way to see subscription mapped
-* No way to see forum mapped
 
 
 ## Working with forum viewing and other event streams
