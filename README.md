@@ -11,7 +11,7 @@ Optionally uses IP2Location csv data to convert IPv4 address into a geo-location
 
 MBZ-XML-TO-EXCEL
 
-This software was original developed by Lawrence Angrave. First pubished version May 22, 2019. This is version 0.0003 (July 8, 2019)
+This software was original developed by Lawrence Angrave. First pubished version May 22, 2019. This readme discusses version 0.0003 and 0.0004(July 8, 2019)
 
 Licensed under the NCSA Open source license Copyright (c) 2019 Lawrence Angrave, All rights reserved.
 
@@ -35,6 +35,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * Data across multiple course section instances is aggregated together
 * Similar object types across all components is aggregatedinto a single Excel table
 * Input source can be the original mbz archive file, or the archive file already expanded as a list of xml files in multiple subdirectories.
+
+Version 0.0004 and higher exclude the original userid
 
 ## Citations and acknowledgements
 
