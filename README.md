@@ -5,7 +5,7 @@ into the equivalent dataset represented as sheets in a small set of Excel files.
 ## Requirements
 
 Uses Python 3, Pandas and Jupyter notebooks
-Optionally requires IP2Location csv data to convert IP into geo-location.
+Optionally uses IP2Location csv data to convert IPv4 address into a geo-location.
 
 ## License
 
