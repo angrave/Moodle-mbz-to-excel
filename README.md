@@ -11,9 +11,9 @@ Optionally uses IP2Location csv data to convert IPv4 address into a geo-location
 
 MBZ-XML-TO-EXCEL
 
-This software was original developed by Lawrence Angrave. First pubished version May 22, 2019. This readme discusses version 0.0003 and 0.0004(July 8, 2019)
+This software was originally developed by Lawrence Angrave in 2019 and 2020. First pubished version May 22, 2019.
 
-Licensed under the NCSA Open source license Copyright (c) 2019 Lawrence Angrave, All rights reserved.
+Licensed under the NCSA Open source license Copyright (c) 2019-2020 Lawrence Angrave, All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal with the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -23,7 +23,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Main Features
 
-* In addition to native unix epoch timestamp, timestamps are recorded as readable UTC strings
+* In addition to native unix epoch millisecond timestamps, timestamps are recorded as readable UTC strings
 * HTML content is extracted as plain text
 * Text encoded as base-64 is decoded
 * Moodle userid are converted into anonymous ids (that can be specified external or defined as random hex digits)
@@ -35,8 +35,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * Data across multiple course section instances is aggregated together
 * Similar object types across all components is aggregatedinto a single Excel table
 * Input source can be the original mbz archive file, or the archive file already expanded as a list of xml files in multiple subdirectories.
-
-Version 0.0004 and higher exclude the original userid
 
 ## Citations and acknowledgements
 
@@ -61,7 +59,6 @@ If you use this in your project, a quick email to the author would be welcomed!
 * Do not assume data is sorted by id or time. Data is concatenated by file -  time-sequenced events in different files will not be sorted in time-order.
 * The assessment sheet (generated from workshop.xml) may generate URLs that are longer than 255 characters, the largested supported by Excel. These very long URLs will be excluded
 * Inferred timestamps based on the Unix Epoch timestamp value may make invalid assumptions about timezone.
-
 
 # Working with Moodle data
 
